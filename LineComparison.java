@@ -33,7 +33,10 @@ public class LineComparison {
 
         if (obj1.equals(obj2)){
             System.out.println("Length of both lines is equal");
-        } else
-            System.out.println("Lines are not equal");
+        } else if (obj1.compareTo(obj2) > 0) {
+            System.out.println("First line is greater than second line");
+        }else if (obj1.compareTo(obj2) < 0)
+            System.out.println("Second line is greater than first line");
     }
 }
+// 1387 4976
